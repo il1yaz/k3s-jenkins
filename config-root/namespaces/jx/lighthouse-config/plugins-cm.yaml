@@ -6,6 +6,14 @@ data:
       repos:
       - il1yaz/k3s-jenkins
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - il1yaz/golang-http-jx
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - il1yaz/test-golang-jx
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -16,7 +24,17 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      il1yaz/golang-http-jx:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       il1yaz/k3s-jenkins:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      il1yaz/test-golang-jx:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -26,8 +44,36 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      il1yaz/golang-http-jx:
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
       il1yaz/k3s-jenkins:
       - config-updater
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
+      il1yaz/test-golang-jx:
       - approve
       - assign
       - help
@@ -53,6 +99,14 @@ data:
     - repos:
       - il1yaz/k3s-jenkins
       trusted_org: todo
+    - repos:
+      - il1yaz/golang-http-jx
+      trusted_org: todo
+    - repos:
+      - il1yaz/test-golang-jx
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
