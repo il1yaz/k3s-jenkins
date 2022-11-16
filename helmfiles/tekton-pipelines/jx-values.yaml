@@ -38,7 +38,7 @@ jxRequirements:
     repository: k3s-jenkins
   - key: staging
   ingress:
-    domain: change.me
+    domain: 192.168.106.2.nip.io
     ignoreLoadBalancer: true
     kind: ingress
     namespaceSubDomain: .tekton-pipelines.

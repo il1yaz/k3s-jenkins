@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - il1yaz/k3s-jenkins
-      target_url: http://lighthouse.jx./merge/status
+      target_url: http://lighthouse.jx.192.168.106.2.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
