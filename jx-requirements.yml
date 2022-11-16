@@ -22,7 +22,7 @@ spec:
     repository: k3s-jenkins
   - key: staging
   ingress:
-    domain: ""
+    domain: 192.168.106.2.nip.io
     ignoreLoadBalancer: true
     kind: ingress
     namespaceSubDomain: .jx.
