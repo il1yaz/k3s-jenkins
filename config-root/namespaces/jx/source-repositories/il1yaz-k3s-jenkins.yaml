@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: il1yaz
+    provider: github
+    repository: k3s-jenkins
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: il1yaz-k3s-jenkins
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/il1yaz/k3s-jenkins.git
+  org: il1yaz
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: k3s-jenkins
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/il1yaz/k3s-jenkins

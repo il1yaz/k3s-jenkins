@@ -6,6 +6,10 @@ data:
       repos:
       - il1yaz/k3s-jenkins
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - il1yaz/k3s-jenkins
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -50,6 +54,9 @@ data:
       xl: 0
       xxl: 0
     triggers:
+    - repos:
+      - il1yaz/k3s-jenkins
+      trusted_org: todo
     - repos:
       - il1yaz/k3s-jenkins
       trusted_org: todo
