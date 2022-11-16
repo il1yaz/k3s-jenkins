@@ -7,7 +7,10 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        il1yaz/golang-http: true
+        il1yaz/golang-http-jx: true
         il1yaz/k3s-jenkins: true
+        il1yaz/test-golang-jx: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -19,7 +22,10 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        il1yaz/golang-http: merge
+        il1yaz/golang-http-jx: merge
         il1yaz/k3s-jenkins: merge
+        il1yaz/test-golang-jx: merge
       queries:
       - labels:
         - approved
@@ -31,6 +37,9 @@ data:
         - needs-rebase
         repos:
         - il1yaz/k3s-jenkins
+        - il1yaz/golang-http-jx
+        - il1yaz/golang-http
+        - il1yaz/test-golang-jx
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +50,9 @@ data:
         - needs-rebase
         repos:
         - il1yaz/k3s-jenkins
+        - il1yaz/golang-http-jx
+        - il1yaz/golang-http
+        - il1yaz/test-golang-jx
       target_url: http://lighthouse.jx.192.168.106.2.nip.io/merge/status
 kind: ConfigMap
 metadata:
