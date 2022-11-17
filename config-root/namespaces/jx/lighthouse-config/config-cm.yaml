@@ -10,6 +10,7 @@ data:
         il1yaz/golang-http: true
         il1yaz/golang-http-jx: true
         il1yaz/k3s-jenkins: true
+        il1yaz/python-jx: true
         il1yaz/test-golang-jx: true
     plank: {}
     pod_namespace: jx
@@ -25,6 +26,7 @@ data:
         il1yaz/golang-http: merge
         il1yaz/golang-http-jx: merge
         il1yaz/k3s-jenkins: merge
+        il1yaz/python-jx: merge
         il1yaz/test-golang-jx: merge
       queries:
       - labels:
@@ -39,6 +41,7 @@ data:
         - il1yaz/k3s-jenkins
         - il1yaz/golang-http-jx
         - il1yaz/golang-http
+        - il1yaz/python-jx
         - il1yaz/test-golang-jx
       - labels:
         - updatebot
@@ -52,6 +55,7 @@ data:
         - il1yaz/k3s-jenkins
         - il1yaz/golang-http-jx
         - il1yaz/golang-http
+        - il1yaz/python-jx
         - il1yaz/test-golang-jx
       target_url: http://lighthouse.jx.192.168.106.2.nip.io/merge/status
 kind: ConfigMap
