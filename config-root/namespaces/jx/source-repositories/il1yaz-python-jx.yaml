@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: il1yaz
+    provider: github
+    repository: python-jx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: il1yaz-python-jx
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/il1yaz/python-jx.git
+  org: il1yaz
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: python-jx
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/il1yaz/python-jx
