@@ -9,6 +9,7 @@ data:
       enabled:
         il1yaz/golang-http: true
         il1yaz/golang-http-jx: true
+        il1yaz/jx-project-go: true
         il1yaz/k3s-jenkins: true
         il1yaz/python-jx: true
         il1yaz/test-golang-jx: true
@@ -25,6 +26,7 @@ data:
       merge_method:
         il1yaz/golang-http: merge
         il1yaz/golang-http-jx: merge
+        il1yaz/jx-project-go: merge
         il1yaz/k3s-jenkins: merge
         il1yaz/python-jx: merge
         il1yaz/test-golang-jx: merge
@@ -41,6 +43,7 @@ data:
         - il1yaz/k3s-jenkins
         - il1yaz/golang-http-jx
         - il1yaz/golang-http
+        - il1yaz/jx-project-go
         - il1yaz/python-jx
         - il1yaz/test-golang-jx
       - labels:
@@ -55,6 +58,7 @@ data:
         - il1yaz/k3s-jenkins
         - il1yaz/golang-http-jx
         - il1yaz/golang-http
+        - il1yaz/jx-project-go
         - il1yaz/python-jx
         - il1yaz/test-golang-jx
       target_url: http://lighthouse.jx.192.168.88.239.nip.io/merge/status

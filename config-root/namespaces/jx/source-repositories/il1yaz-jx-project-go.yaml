@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: il1yaz
+    provider: github
+    repository: jx-project-go
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: il1yaz-jx-project-go
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/il1yaz/jx-project-go.git
+  org: il1yaz
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-project-go
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/il1yaz/jx-project-go

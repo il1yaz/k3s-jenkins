@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: golang-http
     - name: golang-http-jx
+    - name: jx-project-go
     - name: python-jx
     - name: test-golang-jx
     scheduler: in-repo
