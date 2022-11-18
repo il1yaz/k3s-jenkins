@@ -57,7 +57,7 @@ data:
         - il1yaz/golang-http
         - il1yaz/python-jx
         - il1yaz/test-golang-jx
-      target_url: http://lighthouse.jx.192.168.106.2.nip.io/merge/status
+      target_url: http://lighthouse.jx.192.168.88.239.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null

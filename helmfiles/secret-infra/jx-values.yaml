@@ -38,7 +38,7 @@ jxRequirements:
     repository: k3s-jenkins
   - key: staging
   ingress:
-    domain: 192.168.106.2.nip.io
+    domain: 192.168.88.239.nip.io
     ignoreLoadBalancer: true
     kind: ingress
     namespaceSubDomain: .secret-infra.
